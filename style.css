@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* <!-- First section iphone-65 - learn more --> */
+
+.first {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  /* grid-auto-columns: 1fr; */
+  /* gap: 12px 12px; */
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas: "IPHONE-6S LEARN-MORE";
+  padding: 0px 0px 0px 20px;
+}
+
+.IPHONE-6S {
+  grid-area: IPHONE-6S;
+}
+
+.LEARN-MORE {
+  grid-area: LEARN-MORE;
+}
+
+.IPHONE-6S h6 {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #9fa3a7;
+  font-family: "Montserrat", sans-serif;
+}
+.IPHONE-6S h3 {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-family: "Arvo", serif;
+  color: #333333;
+  padding-top: 20px;
+  font-weight: 10;
+}
+.IPHONE-6S p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #9fa3a7;
+  padding-top: 10px;
+}
+.information-iphone {
+  padding-top: 100px;
+}
+
+.IPHONE-6S {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "information-iphone image-Iphone-65";
+}
+.image-Iphone-65 img {
+  grid-area: image-Iphone-65;
+  width: 75%;
+  /* padding-right: 10px; */
+  padding-top: 45px;
+}
+.LEARN-MORE {
+  text-align: center;
+  background-color: #f7f8f9;
+  padding-top: 50px;
+}
+
+.LEARN-MORE h6 {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #9fa3a7;
+  font-family: "Montserrat", sans-serif;
+}
+.LEARN-MORE h3 {
+  font-size: 48px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-family: "Arvo", serif;
+  color: #333333;
+  font-weight: 100;
+}
+.LEARN-MORE p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #9fa3a7;
+}
+.LEARN-MORE a {
+  font-size: 14px;
+  color: #2789c2;
+}
+
+/* <!-- second section IMAC.RETINA --> */
+.second-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "Keyboard IMAC IMAC iCloud"
+    "Keyboard IMAC IMAC iCloud"
+    "Games Experience Experience iCloud"
+    "Games Experience Experience iCloud"
+    "Twitter POPULAR More More";
+  /* gap: 12px 12px; */
+  grid-auto-flow: row;
+  justify-items: stretch;
+}
+
+.Keyboard {
+  grid-area: Keyboard;
+}
+.IMAC {
+  grid-area: IMAC;
+}
+.Games {
+  grid-area: Games;
+}
+.Experience {
+  grid-area: Experience;
+}
+.iCloud {
+  grid-area: iCloud;
+}
+.Twitter {
+  grid-area: Twitter;
+}
+.POPULAR {
+  grid-area: POPULAR;
+}
+.More {
+  grid-area: More;
+}
+.Keyboard {
+  background-color: #f05638;
+  text-align: center;
+  padding-top: 50px;
+}
+.image-keyboard img {
+  width: 100%;
+  padding-bottom: 10px;
+  /* padding-right: 10px; */
+}
+
+.Keyboard h3 {
+  color: #fffbfb;
+  font-family: "arvo", serif;
+  font-size: 22px;
+  /* line-height: 22px; */
+  letter-spacing: 1.2px;
+}
+.information-keyboard a {
+  font-size: 12px;
+  color: #ffc80a;
+  font-family: "open Sans", sans-serif;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin: 20px 0px 0px;
+}
+.IMAC {
+  padding: 68px 26.96px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "information-Imac1 information-Imac2";
+  /* "information-Imac1 information-Imac2"; */
+}
+.information-Imac1 {
+  /* padding-top: 0px; */
+}
+.information-Imac1 h3 {
+  color: #9fa3a7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  /* padding-top: 10px; */
+  transform: translate(12%, -30%);
+}
+.information-Imac1 p {
+  color: #333333;
+  font-family: "arvo", serif;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  transform: translate(12%, -1%);
+}
+.image-Imac img {
+  width: 400px;
+  display: flex;
+  transform: translate(-210px, 0px);
+  padding-top: 0px;
+}
+
+.information-imac2 p {
+  color: #9fa3a7;
+  font-family: "open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  /* letter-spacing: 1px; */
+  transform: translate(-40%, 0px);
+  font-weight: 300px;
+}
+.Dowenload-imac {
+  color: #2789c2;
+  font-family: "open Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transform: translate(-41%, 60%);
+  font-weight: 500;
+}
+.Dowenload-imac a {
+  text-decoration: none;
+  color: #2789c2;
+  font-size: 12px;
+  font-family: "open Sans", sans-serif;
+}
+/* <!-- third section iCloud --> */
+.iCloud {
+  background-color: #8f76bc;
+}
+
+.circular-container {
+  width: 329px;
+  height: 310px;
+  border-radius: 50%;
+  background: linear-gradient(155deg, #8e44ad, #9b59b6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  transform: translate(0px, 40px);
+}
+
+.icon {
+  width: 190px;
+  height: 190px;
+  margin-top: 20px;
+}
+
+.popular-tag {
+  position: absolute;
+  top: 20px;
+  right: 110px;
+  background-color: #ffffff14;
+  color: #ffffff;
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.popular-tag img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.title {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: "montserrat", sans-serif;
+}
+.iCloud h3 {
+  font-size: 48px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-family: "Arvo", serif;
+  color: #ffffff;
+  font-weight: 100;
+  margin: 20px 0px 10px;
+  text-align: center;
+  padding-top: 25px;
+}
+.iCloud p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+.iCloud a {
+  position: relative;
+  top: 20px;
+  left: 75px;
+  background-color: #ffc80a;
+  color: #000000;
+  padding: 15px 50px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "open Sans", sans-serif;
+}
+/* <!-- forth section Experience --> */
+.Games {
+  background-color: #f7f8f9;
+}
+.Games img {
+  width: 75%;
+  /* height: 50%; */
+  object-fit: cover;
+}
+.information-Games {
+  text-align: center;
+  padding: 20px 0px;
+}
+.information-Games h3 {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-family: "Arvo", serif;
+  color: #333333;
+}
+.information-Games a {
+  position: relative;
+  top: 20px;
+  left: 0px;
+  color: #27b9c2;
+  font-size: 12px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "open Sans", sans-serif;
+}
+/* <!-- fifth section experience -->  */
+.Experience {
+  /* position: relative; */
+  background-color: #93b6b7;
+}
+.image-Experience {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.Experience #uix {
+  position: relative;
+  /* width: 50%; */
+  /* height: 60%; */
+  transform: translate(0px, 0px);
+  /* object-fit: cover; */
+  /* position: absolute;
+  top: 130px;
+  left: 170px; */
+  opacity: 0.7;
+  max-width: 100%;
+  height: auto;
+}
+.Experience #ipad {
+  /* position: absolute; */
+  /* width: 55%; */
+  /* height: 40%; */
+  transform: translate(-750px, 32px);
+  /* top: 160px;
+  left: 110px; */
+  /* object-fit: cover; */
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+}
+.information-Experience h3 {
+  padding-top: 30px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-family: "Arvo", serif;
+  color: #ffffff;
+  text-align: center;
+}
+.information-Experience a {
+  position: relative;
+  left: 30px;
+  top: 20px;
+  color: #ffffff;
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 9px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "open Sans", sans-serif;
+  background-color: #fa684f;
+  font-weight: bold;
+}
+/* <!-- sixth section Twitter -->  */
+
+.Twitter {
+  background-color: #38d5f4;
+}
+.Twitter-2 {
+  width: 250px;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  transform: translate(40px, 10px);
+}
+.Twitter-1 {
+  position: absolute;
+  width: 250px;
+  height: 160px;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  transform: translate(40px, 0px);
+  border: #2789c2 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* <!-- seventh section papular -->  */
+.POPULAR {
+  text-align: center;
+  padding-top: 30px;
+  background-color: #f7f8f9;
+}
+.POPULAR span {
+  /* position: relative;
+  left: 30px;
+  top:20px; */
+  color: #ffffff;
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 9px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "open Sans", sans-serif;
+  background-color: #7bc424;
+  font-weight: bold;
+}
+.POPULAR h3 {
+  padding-top: 10px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  font-family: "Arvo", serif;
+  color: #333333;
+  text-align: center;
+}
+/* <!-- eighth section More  */
+.More {
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.More img {
+  width: 160px;
+}
+.More p {
+  padding-top: 40px;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Arvo", serif;
+  /* margin: 10px 0px 20px; */
+  text-align: center;
+}
